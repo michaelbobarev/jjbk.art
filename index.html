@@ -12,7 +12,7 @@
   <meta name="author" content="Юлия Жбиковская" />
   <link rel="canonical" href="https://www.jjbk.art/" />
 
-  <!-- Предзагрузка DNS для быстрого перехода по ключевым ссылкам -->
+  <!-- Предзагрузка DNS -->
   <link rel="dns-prefetch" href="https://www.jjbk.ru" />
   <link rel="dns-prefetch" href="https://wa.me" />
   <link rel="dns-prefetch" href="https://jjbkcareer.t.me" />
@@ -21,18 +21,18 @@
   <link rel="icon" type="image/png" sizes="192x192" href="https://www.jjbk.art/favicon.png" />
   <link rel="apple-touch-icon" href="https://www.jjbk.art/favicon.png" />
 
-  <!-- Open Graph (превью в мессенджерах и соцсетях) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.jjbk.art/" />
   <meta property="og:title" content="Юлия Жбиковская — Карьерный консультант и профориентолог" />
   <meta property="og:description" content="Помогаю найти любимое дело, справиться с переменами и уверенно двигаться вперед." />
-  <meta property="og:image" content="https://www.jjbk.art/preview.png" />
+  <meta property="og:image" content="https://www.jjbk.art/favicon.png" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Юлия Жбиковская — Карьерный консультант и профориентолог" />
   <meta name="twitter:description" content="Помогаю найти любимое дело, справиться с переменами и уверенно двигаться вперед." />
-  <meta name="twitter:image" content="https://www.jjbk.art/preview.png" />
+  <meta name="twitter:image" content="https://www.jjbk.art/favicon.png" />
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
@@ -87,7 +87,7 @@
         "url": "https://www.jjbk.art/",
         "telephone": "+79096557306",
         "image": "https://www.jjbk.art/favicon.png",
-        "provider": {
+        "founder": {
           "@id": "https://www.jjbk.art/#person"
         },
         "areaServed": "RU",
@@ -129,12 +129,12 @@
   <style>
     :root {
       --bg: #ffffff;
-      --bg-alt: #f9fafb;
-      --border: #e5e7eb;
-      --border-strong: #d1d5db;
-      --text-main: #111827;
-      --text-muted: #4b5563;
-      --text-light: #6b7280;
+      --bg-alt: #f8fafc;
+      --border: #e2e8f0;
+      --border-strong: #cbd5e1;
+      --text-main: #0f172a;
+      --text-muted: #334155;
+      --text-light: #475569;
       --radius-lg: 14px;
       --radius-md: 10px;
     }
@@ -176,8 +176,8 @@
     }
 
     .avatar-img {
-      width: 100%;
-      height: 100%;
+      width: 128px;
+      height: 128px;
       border-radius: 50%;
       object-fit: cover;
       display: block;
@@ -196,7 +196,7 @@
 
     .subtitle {
       font-size: 15px;
-      font-weight: 500;
+      font-weight: 600;
       color: var(--text-muted);
       margin-bottom: 16px;
     }
@@ -210,8 +210,8 @@
     }
 
     .tag-chip {
-      font-size: 12px;
-      font-weight: 500;
+      font-size: 12.5px;
+      font-weight: 600;
       color: var(--text-muted);
       background: var(--bg-alt);
       border: 1px solid var(--border);
@@ -220,7 +220,7 @@
     }
 
     .lead-text {
-      font-size: 15.5px;
+      font-size: 16px;
       color: var(--text-muted);
       max-width: 520px;
       line-height: 1.6;
@@ -229,7 +229,7 @@
 
     .lead-text strong {
       color: var(--text-main);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .cta-container {
@@ -244,13 +244,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 7px;
+      gap: 8px;
       text-decoration: none;
-      font-weight: 500;
-      font-size: 13.5px;
-      padding: 8px 18px;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 10px 20px;
       border-radius: 999px;
-      color: var(--text-muted);
+      color: var(--text-main);
       background: var(--bg);
       border: 1px solid var(--border-strong);
       transition: all 0.2s ease;
@@ -260,14 +260,14 @@
     .btn-compact:hover {
       background: var(--bg-alt);
       border-color: var(--text-main);
-      color: var(--text-main);
       transform: translateY(-1px);
     }
 
     .micro-note {
-      font-size: 12.5px;
+      font-size: 13px;
+      font-weight: 500;
       color: var(--text-light);
-      margin-top: 8px;
+      margin-top: 10px;
     }
 
     .cards-list {
@@ -320,7 +320,7 @@
 
     .nav-card-title {
       font-size: 15px;
-      font-weight: 600;
+      font-weight: 700;
       color: var(--text-main);
       margin-bottom: 2px;
       display: flex;
@@ -329,7 +329,7 @@
     }
 
     .nav-card-desc {
-      font-size: 13px;
+      font-size: 13.5px;
       color: var(--text-muted);
       line-height: 1.4;
     }
@@ -356,10 +356,10 @@
       text-align: left;
     }
 
-    .expertise-header {
+    h2.expertise-header, h2.socials-title {
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       color: var(--text-light);
       margin-bottom: 14px;
@@ -388,20 +388,12 @@
 
     .exp-item strong {
       color: var(--text-main);
+      font-weight: 700;
     }
 
     .socials-section {
       width: 100%;
       margin-bottom: 36px;
-    }
-
-    .socials-title {
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--text-light);
-      margin-bottom: 14px;
     }
 
     .socials-list {
@@ -433,7 +425,7 @@
     }
 
     footer {
-      font-size: 12px;
+      font-size: 12.5px;
       color: var(--text-light);
       display: flex;
       flex-direction: column;
@@ -442,20 +434,19 @@
 
     footer a {
       color: var(--text-muted);
-      text-decoration: none;
+      text-decoration: underline;
     }
 
     footer a:hover {
       color: var(--text-main);
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <main class="container" role="main">
     <div class="avatar-wrapper">
-      <img src="favicon.png" alt="Юлия Жбиковская" class="avatar-img" onerror="this.onerror=null; this.src='https://www.jjbk.art/favicon.png';" />
+      <img src="favicon.png" alt="Юлия Жбиковская" width="128" height="128" class="avatar-img" onerror="this.onerror=null; this.src='https://www.jjbk.art/favicon.png';" />
     </div>
 
     <h1>Юлия Жбиковская</h1>
@@ -472,8 +463,8 @@
     </p>
 
     <div class="cta-container">
-      <a href="https://wa.me/79096557306?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" class="btn-compact" target="_blank" rel="noopener noreferrer">
-        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.129-.533-1.636-.689-2.69-2.355-2.772-2.464-.082-.109-.669-.89-.669-1.696 0-.806.421-1.203.571-1.365.15-.162.33-.203.439-.203.11 0 .219.002.315.006.101.005.237-.038.37.28.144.341.492 1.203.535 1.29.043.087.072.188.014.303-.058.115-.087.188-.173.289-.086.101-.181.226-.258.303-.086.087-.176.182-.076.354.101.173.447.737.959 1.194.658.586 1.213.768 1.386.855.173.087.274.072.375-.044.101-.115.432-.505.547-.678.115-.173.23-.144.388-.087.158.058 1.002.473 1.174.559.172.086.287.13.33.202.043.072.043.419-.101.824z"/></svg>
+      <a href="https://wa.me/79096557306?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%BD%D0%B0%20%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E" class="btn-compact" target="_blank" rel="noopener noreferrer" aria-label="Написать Юлии Жбиковской в WhatsApp">
+        <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.129-.533-1.636-.689-2.69-2.355-2.772-2.464-.082-.109-.669-.89-.669-1.696 0-.806.421-1.203.571-1.365.15-.162.33-.203.439-.203.11 0 .219.002.315.006.101.005.237-.038.37.28.144.341.492 1.203.535 1.29.043.087.072.188.014.303-.058.115-.087.188-.173.289-.086.101-.181.226-.258.303-.086.087-.176.182-.076.354.101.173.447.737.959 1.194.658.586 1.213.768 1.386.855.173.087.274.072.375-.044.101-.115.432-.505.547-.678.115-.173.23-.144.388-.087.158.058 1.002.473 1.174.559.172.086.287.13.33.202.043.072.043.419-.101.824z"/></svg>
         Написать в WhatsApp
       </a>
       <div class="micro-note">Установочная сессия (20 минут) — разбор ситуации и план действий</div>
@@ -482,70 +473,68 @@
     <div class="cards-list">
       <a href="https://www.jjbk.ru" class="nav-card" target="_blank" rel="noopener noreferrer">
         <div class="nav-card-left">
-          <div class="card-icon-box">
-            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          <div class="card-icon-box" aria-hidden="true">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
           </div>
           <div>
-            <div class="nav-card-title">
-              Блог | jjbk.ru
-            </div>
+            <div class="nav-card-title">Блог | jjbk.ru</div>
             <div class="nav-card-desc">Полезные статьи, разборы ситуаций и практические рекомендации</div>
           </div>
         </div>
-        <div class="nav-card-arrow">→</div>
+        <div class="nav-card-arrow" aria-hidden="true">→</div>
       </a>
 
-      <div class="expertise-block">
-        <div class="expertise-header">С чем можно обратиться</div>
+      <section class="expertise-block" aria-labelledby="expertise-heading">
+        <h2 id="expertise-heading" class="expertise-header">С чем можно обратиться</h2>
         <div class="expertise-list">
           <div class="exp-item">
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             <span><strong>Поиск своего дела:</strong> определение сильных сторон и выбор направления</span>
           </div>
           <div class="exp-item">
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             <span><strong>Смена работы и отбор:</strong> понятное резюме и спокойная подготовка к интервью</span>
           </div>
           <div class="exp-item">
-            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
             <span><strong>Карьерный тупик и выгорание:</strong> возвращение энергии, смысла и уверенности</span>
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="socials-section">
-      <div class="socials-title">Канал и социальные сети</div>
+    <section class="socials-section" aria-labelledby="socials-heading">
+      <h2 id="socials-heading" class="socials-title">Канал и социальные сети</h2>
       <div class="socials-list">
-        <a href="https://jjbkcareer.t.me/" class="social-btn" title="Telegram-канал" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
+        <a href="https://jjbkcareer.t.me/" class="social-btn" aria-label="Telegram-канал" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .37z"/></svg>
         </a>
-        <a href="https://wa.me/79096557306" class="social-btn" title="WhatsApp" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.129-.533-1.636-.689-2.69-2.355-2.772-2.464-.082-.109-.669-.89-.669-1.696 0-.806.421-1.203.571-1.365.15-.162.33-.203.439-.203.11 0 .219.002.315.006.101.005.237-.038.37.28.144.341.492 1.203.535 1.29.043.087.072.188.014.303-.058.115-.087.188-.173.289-.086.101-.181.226-.258.303-.086.087-.176.182-.076.354.101.173.447.737.959 1.194.658.586 1.213.768 1.386.855.173.087.274.072.375-.044.101-.115.432-.505.547-.678.115-.173.23-.144.388-.087.158.058 1.002.473 1.174.559.172.086.287.13.33.202.043.072.043.419-.101.824z"/></svg>
+        <a href="https://wa.me/79096557306" class="social-btn" aria-label="Чат в WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.129-.533-1.636-.689-2.69-2.355-2.772-2.464-.082-.109-.669-.89-.669-1.696 0-.806.421-1.203.571-1.365.15-.162.33-.203.439-.203.11 0 .219.002.315.006.101.005.237-.038.37.28.144.341.492 1.203.535 1.29.043.087.072.188.014.303-.058.115-.087.188-.173.289-.086.101-.181.226-.258.303-.086.087-.176.182-.076.354.101.173.447.737.959 1.194.658.586 1.213.768 1.386.855.173.087.274.072.375-.044.101-.115.432-.505.547-.678.115-.173.23-.144.388-.087.158.058 1.002.473 1.174.559.172.086.287.13.33.202.043.072.043.419-.101.824z"/></svg>
         </a>
-        <a href="https://www.vk.com/jjbkcareer" class="social-btn" title="VK" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M15.684 0H8.316C3.723 0 0 3.723 0 8.316v7.368C0 20.277 3.723 24 8.316 24h7.368C20.277 24 24 20.277 24 15.684V8.316C24 3.723 20.277 0 15.684 0zm4.568 17.514h-1.992c-.754 0-.986-.601-2.339-1.954-1.181-1.157-1.706-1.306-2.001-1.306-.411 0-.528.118-.528.686v1.854c0 .47-.15.753-1.385.753-2.046 0-4.324-1.242-5.925-3.551-2.404-3.41-3.076-5.97-3.076-6.495 0-.294.118-.565.686-.565h1.992c.508 0 .701.235.897.777 1.011 2.913 2.698 5.467 3.398 5.467.265 0 .385-.118.385-.776V10.23c-.083-1.385-.807-1.503-.807-1.997 0-.236.196-.471.517-.471h3.136c.433 0 .587.227.587.734v3.957c0 .432.193.587.32.587.265 0 .484-.155.986-.657 1.545-1.737 2.65-4.409 2.65-4.409.146-.316.4-.576.915-.576h1.992c.599 0 .727.305.599.734-.236 1.087-2.52 4.316-2.635 4.512-.236.385-.328.56 0 1.002.235.32 1.018 1.002 1.54 1.626 1.026 1.157 1.838 2.128 2.054 2.799.117.353-.138.53-.497.53z"/></svg>
+        <a href="https://www.vk.com/jjbkcareer" class="social-btn" aria-label="Сообщество ВКонтакте" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.684 0H8.316C3.723 0 0 3.723 0 8.316v7.368C0 20.277 3.723 24 8.316 24h7.368C20.277 24 24 20.277 24 15.684V8.316C24 3.723 20.277 0 15.684 0zm4.568 17.514h-1.992c-.754 0-.986-.601-2.339-1.954-1.181-1.157-1.706-1.306-2.001-1.306-.411 0-.528.118-.528.686v1.854c0 .47-.15.753-1.385.753-2.046 0-4.324-1.242-5.925-3.551-2.404-3.41-3.076-5.97-3.076-6.495 0-.294.118-.565.686-.565h1.992c.508 0 .701.235.897.777 1.011 2.913 2.698 5.467 3.398 5.467.265 0 .385-.118.385-.776V10.23c-.083-1.385-.807-1.503-.807-1.997 0-.236.196-.471.517-.471h3.136c.433 0 .587.227.587.734v3.957c0 .432.193.587.32.587.265 0 .484-.155.986-.657 1.545-1.737 2.65-4.409 2.65-4.409.146-.316.4-.576.915-.576h1.992c.599 0 .727.305.599.734-.236 1.087-2.52 4.316-2.635 4.512-.236.385-.328.56 0 1.002.235.32 1.018 1.002 1.54 1.626 1.026 1.157 1.838 2.128 2.054 2.799.117.353-.138.53-.497.53z"/></svg>
         </a>
-        <a href="https://instagram.com/yulia_zhbikovskaya" class="social-btn" title="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        <a href="https://instagram.com/yulia_zhbikovskaya" class="social-btn" aria-label="Instagram профиль" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
-        <a href="https://www.x.com/jjbkcareer" class="social-btn" title="X (Twitter)" target="_blank" rel="noopener noreferrer">
-          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <a href="https://www.x.com/jjbkcareer" class="social-btn" aria-label="Профиль в X (Twitter)" target="_blank" rel="noopener noreferrer">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </a>
-        <a href="https://www.facebook.com/yuliazhbikovskaya/" class="social-btn" title="Facebook" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <a href="https://www.facebook.com/yuliazhbikovskaya/" class="social-btn" aria-label="Facebook страница" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
         </a>
-        <a href="https://ok.ru/profile/1960327014" class="social-btn" title="Одноклассники" target="_blank" rel="noopener noreferrer">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 10.23c2.81 0 5.1-2.28 5.1-5.11C17.1 2.28 14.81 0 12 0S6.9 2.28 6.9 5.12c0 2.83 2.29 5.11 5.1 5.11zm0-7.72c1.43 0 2.6 1.17 2.6 2.61 0 1.44-1.17 2.61-2.6 2.61-1.44 0-2.6-1.17-2.6-2.61 0-1.44 1.16-2.61 2.6-2.61zm5.1 9.94c-1.28.7-2.88 1.15-4.6 1.25l2.45 2.45c.49.49.49 1.28 0 1.77-.24.24-.56.37-.88.37s-.64-.12-.88-.37L12 16.7l-1.19 1.19c-.24.24-.56.37-.88.37s-.64-.12-.88-.37c-.49-.49-.49-1.28 0-1.77l2.45-2.45c-1.72-.1-3.32-.55-4.6-1.25-.97-.53-1.32-1.75-.79-2.72.53-.97 1.75-1.32 2.72-.79 1.58.87 3.38 1.33 5.17 1.33s3.59-.46 5.17-1.33c.97-.53 2.19-.18 2.72.79.53.97.18 2.19-.79 2.72z"/></svg>
+        <a href="https://ok.ru/profile/1960327014" class="social-btn" aria-label="Профиль в Одноклассниках" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 10.23c2.81 0 5.1-2.28 5.1-5.11C17.1 2.28 14.81 0 12 0S6.9 2.28 6.9 5.12c0 2.83 2.29 5.11 5.1 5.11zm0-7.72c1.43 0 2.6 1.17 2.6 2.61 0 1.44-1.17 2.61-2.6 2.61-1.44 0-2.6-1.17-2.6-2.61 0-1.44 1.16-2.61 2.6-2.61zm5.1 9.94c-1.28.7-2.88 1.15-4.6 1.25l2.45 2.45c.49.49.49 1.28 0 1.77-.24.24-.56.37-.88.37s-.64-.12-.88-.37L12 16.7l-1.19 1.19c-.24.24-.56.37-.88.37s-.64-.12-.88-.37c-.49-.49-.49-1.28 0-1.77l2.45-2.45c-1.72-.1-3.32-.55-4.6-1.25-.97-.53-1.32-1.75-.79-2.72.53-.97 1.75-1.32 2.72-.79 1.58.87 3.38 1.33 5.17 1.33s3.59-.46 5.17-1.33c.97-.53 2.19-.18 2.72.79.53.97.18 2.19-.79 2.72z"/></svg>
         </a>
       </div>
-    </div>
+    </section>
 
     <footer>
       <div>&copy; 2026 JJBK • <a href="https://www.jjbk.art">jjbk.art</a></div>
       <div>Индивидуальные консультации • Конфиденциально</div>
     </footer>
-  </div>
+  </main>
 
 </body>
 </html>
