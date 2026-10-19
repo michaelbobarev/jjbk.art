@@ -1,0 +1,11 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "yulia-zhbikovskaya-profile",
+      "type": "skill-md",
+      "description": "Official profile, verified career services, and social links for career consultant and guidance expert Yulia Zhbikovskaya.",
+      "url": "https://www.jjbk.art/.well-known/agent-skills/profile/SKILL.md"
+    }
+  ]
+}
