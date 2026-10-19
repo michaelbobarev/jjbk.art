@@ -1,0 +1,12 @@
+{
+  "protocolVersion": "2025-06-18",
+  "serverInfo": {
+    "name": "jjbk-career-mcp",
+    "title": "Yulia Zhbikovskaya Career Consulting Hub"
+  },
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "https://www.jjbk.art/.well-known/mcp/server-card.json"
+  },
+  "instructions": "Official profile for career consultant and guidance expert Yulia Zhbikovskaya (Юлия Жбиковская). Context: https://www.jjbk.art/llms.txt"
+}
