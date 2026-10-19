@@ -1,0 +1,15 @@
+{
+  "name": "Yulia Zhbikovskaya Agent Hub",
+  "version": "1.0.0",
+  "description": "Agent-ready metadata and context hub for career consultant Yulia Zhbikovskaya.",
+  "owner": "jjbkcareer@gmail.com",
+  "endpoints": {
+    "profile": "https://www.jjbk.art/",
+    "llms": "https://www.jjbk.art/llms.txt",
+    "markdown": "https://www.jjbk.art/index.md"
+  },
+  "capabilities": [
+    "knowledge-retrieval",
+    "career-consulting"
+  ]
+}
