@@ -36,3 +36,4 @@ User-agent: Yandex
 Allow: /
 
 Sitemap: https://www.jjbk.art/sitemap.xml
+Agentmap: https://www.jjbk.art/.well-known/ai-catalog.json
