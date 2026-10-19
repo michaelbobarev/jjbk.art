@@ -5,7 +5,9 @@
       "name": "yulia-zhbikovskaya-profile",
       "type": "skill-md",
       "description": "Official profile, verified career services, and social links for career consultant and guidance expert Yulia Zhbikovskaya.",
-      "url": "https://www.jjbk.art/.well-known/agent-skills/profile/SKILL.md"
+      "url": "https://www.jjbk.art/.well-known/agent-skills/profile/SKILL.md",
+      "digest": "a6a081b18f38593c298d6772c56a6e692d179eeff799e80dc540df992e8a6023",
+      "sha256": "a6a081b18f38593c298d6772c56a6e692d179eeff799e80dc540df992e8a6023"
     }
   ]
 }
