@@ -1,0 +1,17 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Юлия Жбиковская",
+    "identifier": "did:web:www.jjbk.art",
+    "documentationUrl": "https://www.jjbk.art/llms.txt"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:www.jjbk.art:mcp:consultant-profile",
+      "displayName": "Yulia Zhbikovskaya Official Profile & Services",
+      "type": "application/mcp-server-card+json",
+      "url": "https://www.jjbk.art/.well-known/mcp/server-card.json",
+      "capabilities": ["ConsultantProfile", "CareerServices"]
+    }
+  ]
+}
