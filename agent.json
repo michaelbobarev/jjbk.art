@@ -6,7 +6,8 @@
   "endpoints": {
     "profile": "https://www.jjbk.art/",
     "llms": "https://www.jjbk.art/llms.txt",
-    "markdown": "https://www.jjbk.art/index.md"
+    "markdown": "https://www.jjbk.art/index.md",
+    "catalog": "https://www.jjbk.art/.well-known/ai-catalog.json"
   },
   "capabilities": [
     "knowledge-retrieval",
